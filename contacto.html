@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PauLina Suarez M | Front End Developer | Contacto</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="/img/favicon.ico" type="image/x-icon"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+GB+S:ital,wght@1,100..400&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav>
+        <a href="index.html"><img src="img/icono.png" alt="icon" class="icon"></a>
+        <div class="menu"><img src="img/menu.png" alt="menu"></div>
+
+        <ul class="boxmenu">
+            <li><a href="#1">sobre mi</a></li>
+            <li><a href="#2">skills</a></li>
+            <li><a href="#3">portfolio</a></li>
+            <li><a href="contacto.html">contacto</a></li>
+        </ul>
+    </nav>
+
+    <main class="contenedor-contacto"> 
+        <section class="contacto">
+            <h1>contacto.</h1>
+            <h3  id="mensaje-contacto" class="aparecer">Encuentrame por mis redes o correo.</h3>
+            
+            <div class="contenedor-redes">
+                <a href="https://github.com/Pol1311?tab=repositories"><img src="img/github.png" alt="Github" class="redes"></a>
+                <a href=""><img src="img/linkedin.png" alt="Linkedin" class="redes"></a>
+            </div>        
+        </section>
+    
+        <section class="formulario">
+            <h2>Enviame un correo</h2>
+            <form action="">
+
+                    <label for="nombre">Nombre:</label>
+                    <input class="input-texto" type="text" name="nombre" maxlength="50" required>
+                    <label for="asunto">Asunto:</label>
+                    <input class="input-texto" type="text" name="asunto" maxlength="50" required>
+                    <label for="email">email:</label>
+                    <input class="input-texto" type="email" name="email" required>
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea class="area" name="mensaje" maxlength="300" required ></textarea>
+                    <input type="submit" value="Enviar" >
+            </form>
+        </section>
+    </main>
+    <footer >
+        <p id="creador">Paulina Suarez M.</p>
+        <a href="https://www.freepik.es/vector-gratis/fondo-acuarela-abstracta-suave-neutro_16337529.htm#from_view=detail_alsolike">Imagen de rawpixel.com en Freepik</a>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>

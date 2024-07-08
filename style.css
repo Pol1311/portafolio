@@ -1,0 +1,379 @@
+h1, h2, h3, .clasificacion, #creador, input[type=submit]{
+    font-family: "Playwrite GB S", cursive;
+    font-style: italic;
+    font-weight: 600;
+}
+
+
+nav  {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 80px;
+    background-color: rgb(0, 0, 0);
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    z-index: 2;
+}
+
+.icon {    
+    border-radius: 15px;
+    width: 50px;
+    margin: 18px 30px;
+}
+
+.boxmenu {
+    margin-left: 50px;
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+.boxmenu li {
+    color: white;
+    padding: 0 40px;
+}
+
+.menu {
+    display: none;
+    width:50px;
+}
+
+
+@media screen and (max-width:800px) {
+    .boxmenu {
+        justify-content: flex-end;
+        flex-direction: column;
+        width: 40%;
+        position: absolute;
+        top: 80px;
+        right: 0;
+        background-color: rgba(0, 0, 0, 0.8);
+        gap: 20px;
+        padding: 10px;
+        display: none;
+    }
+    .menu{
+        display: block;
+        margin: 18px;
+    }
+    
+} 
+
+
+
+
+header {
+    background-image: url("img/fondo.jpg");
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    box-shadow: 0 5px 5px rgb(164, 162, 162);
+    margin-top: 80px;
+}
+
+.descripcion {
+    font-size: 35px;
+    padding: 0 0 100px;
+}
+
+.aparecer{
+    visibility:visible;
+    animation-name: aparecer;
+    animation-duration: 8s;
+}
+
+@keyframes aparecer {
+    0% {visibility: hidden; color:rgba(0, 0, 0, 0);}
+    25% {visibility: visible; color:rgba(0, 0, 0, 0.1);}
+    50% {visibility: visible; color:rgba(0, 0, 0, 0.2);}
+    75% {visibility: visible; color:rgba(0, 0, 0, 0.5);}
+    100% {visibility: visible; color:rgba(0, 0, 0, 1);}
+}
+
+h1 {
+    font-size: 80px;
+    line-height: 140px;
+    margin-left: 40px;
+    padding: 60px 0;
+    color: black;
+    animation-name: titulo;
+    animation-duration: 4s;
+    position: relative;
+
+}
+
+@keyframes titulo {
+    0% {left: -1200px;}
+    100% {left: 0px;}
+}
+
+
+section {
+    box-shadow: 0 5px 5px rgb(164, 162, 162);
+}
+
+.skills, footer {
+    background-color:#efeae1;
+}
+
+h2 {
+    font-size: 50px;
+    padding: 50px;
+
+}
+
+p {
+    font-size: 20px;
+    padding: 40px;
+
+}
+
+.sobremi {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.sobremi img {
+    width: 350px;
+    margin-bottom: 40px;
+    border-radius: 30px;
+}
+
+.sobremi p{
+    width: 60%;
+    text-align: justify;
+}
+
+
+@media screen and (max-width:900px) {
+    .sobremi p {
+        width: 100%;
+    }   
+}
+
+
+
+.contenedortabla {
+    width: 100%;
+    margin-top: 20px;
+    position: relative;
+    padding-bottom: 40px;
+}
+
+.clasificacion{
+    display: inline-block;
+    box-sizing: border-box;
+    width: 20%;
+    padding-right: 20px;
+    text-align: right;
+}
+
+.tabla {
+    display: inline-block;
+    box-sizing: border-box;
+    height: 100px;
+    width: 70%;
+    border-bottom: 3px solid rgb(164, 162, 162);
+    border-left: 3px solid rgb(164, 162, 162);
+    color: #efeae1;;
+}
+
+.habilidades {
+    z-index: 1;
+    position: absolute;
+    left: 50%;
+    bottom: 9%;
+    width: 10%;
+    box-sizing: border-box;
+    text-align: center;
+    color: rgb(164, 162, 162);
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 20px;
+    animation-name: graficos;
+    animation-duration: 4s;
+}
+
+
+.ghtml {
+    background-image:linear-gradient(0deg,#ece6e3,#EBD5CB);
+    transform: translateX(-298%);
+    height: 55%;
+}
+
+.gcss {
+    background-image:linear-gradient(0deg, #dfebeb,#cfd7d7);
+    transform: translateX(-180%);
+    height: 55%;
+}
+
+.gjs {  
+    background-image:linear-gradient(0deg, #e6ecdc, #d8dcd1);
+    transform: translateX(-60%);
+    height: 46%;
+}
+
+.ggit {  
+    background-image:linear-gradient(0deg,#F8F1E5,#f0e4cd);
+    transform: translateX(60%);
+    height: 9%;
+}
+.greact {  
+    background-image:linear-gradient(0deg, #e1cfc8,#e5c2b5);
+    transform: translateX(180%);
+    height: 9%;
+}
+
+.gjuegos {  
+    background-image:linear-gradient(0deg, #dee7e0,#C8D2CA);
+    transform: translateX(300%);
+    height: 86%;
+}
+
+.portfolio {
+    padding-bottom: 40px;
+}
+
+.contenedor-cartas {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 40px;
+}
+
+.cartas  {
+    border: 1px solid rgb(164, 162, 162);
+    border-radius: 15px;
+    box-shadow:  5px 5px 5px rgb(164, 162, 162);
+    width: 300px;
+    height: 350px;
+    cursor: pointer;
+    box-sizing: border-box;
+    overflow: hidden;
+    background-color:#efeae1;
+
+}
+.cartas img {
+    height: 180px;
+}
+
+.cartas .texto {
+    padding: 12px;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+.tools {
+    color: rgb(164, 162, 162);
+    font-size: 15px;
+    padding: 5px;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    color: rgb(164, 162, 162);
+    
+}
+
+footer a{
+    float: right;
+    padding: 40px;
+    font-size: 18px;
+
+}
+
+.contenedor-contacto{
+    margin-top: 80px;
+    display: flex;
+}
+
+
+.contacto {
+    padding: 20px 0;
+    background-image: url(img/fondo.jpg);
+    background-size: cover;
+    min-width: 450px;
+    box-sizing: border-box;
+}
+
+#mensaje-contacto  {
+    margin-left: 50px;
+}
+.contenedor-redes{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 60px;
+    margin-bottom: 40px;
+}
+
+.redes{
+    width: 40px;
+}
+
+.formulario {
+    box-sizing: border-box;
+    display: inline-block;
+    width: 65%;
+}
+
+.input-texto, .area{
+    border: 1px solid  rgb(164, 162, 162);;
+    border-radius: 10px;
+    box-shadow:  5px 5px 5px rgb(164, 162, 162);
+}
+
+label, input {
+    display: block;
+    width:80%;
+    padding: 10px;
+    margin-left: 50px;
+
+}
+
+.area {
+    resize: none;
+    height: 100px;
+    width: 80%;
+    margin-left: 50px;
+
+}
+
+input[type=submit]{
+    color: black;
+    letter-spacing: 2px;
+    font-weight: 600;
+    background-color:#e5c2b5 ;
+    box-shadow:  5px 5px 5px rgb(164, 162, 162);
+    border-radius: 10px;
+    padding: 10px 20px;
+    width: 150px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width:850px) {
+    .contenedor-contacto{
+        flex-direction: column;
+    }
+    
+    .formulario{
+        width: 100%;
+    }
+    .contacto{
+        width: 100%;
+        text-align: center;
+    }
+    
+}
